@@ -99,7 +99,7 @@ module.exports = {
             sidebarDepth: 2,
             children: [
                 ['/misc/bluetooth', 'Suporte de Bluetooth'],
-				        ['/misc/intel', 'Placas Wi-Fi Intel'],
+				        ['/misc/intel', 'Placas Wi-Fi da Intel'],
 				        ['/misc/credit', 'Créditos']
             ]
         },
