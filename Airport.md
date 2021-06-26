@@ -1,47 +1,50 @@
-# Airport Adapters
+# Adaptadores AirPort
 
-So what are Airport adapters and why are they the preferred piece of hardware? Well, they're genuine Apple Wireless cards pulled from MacBooks and iMacs meaning no extra configurations/kexts are required to get this hardware up and running. The main issue is that they require an adapter to PC hardware and are generally bulkier making them unfavourable in laptops but perfect for desktops.
+Então, do que se tratam os adaptadores AirPort e porque são as placas preferidas? Bom, porque são placas genuínas da Apple retiradas de MacBooks e iMacs. Isso significa que nenhuma configuração extra é necessária para fazê-las funcionar. O principal problema é que elas precisam de um adaptador para encaixá-las em placas-mãe de PCs e são geralmente maiores, o que as torna uma opção melhor para desktops, mas não para notebooks.
 
-Best part, **no kexts needed!**
+A melhor parte? **Não é preciso usar nenhuma kext!**
 
-* Note: When buying a Wifi card and an adapter, make sure the antenna sockets match up, there are 2 main types of sockets:
-  * MHF4: Commonly used on M.2 and Apple's laptop wifi cards
-  * U.FL: Commonly used on mPCIe and Apple's desktop wifi cards
+Observação:
+* Ao comprar uma placa Wi-Fi e um adaptador, não seja burro que nem o deomkds¹ e certifique-se de que os conectores (*sockets*) das antenas são os corretos para a sua placa-mãe. Existem dois principais tipos de conectores:
+  * MHF4: Comumente usado em placas Wi-Fi M.2 e em notebooks da Apple (MacBook Pro etc.).
+  * U.FL: Comumente usado em placas Wi-Fi mPCIe e em desktops da Apple (iMac etc.).
 
-# Which cards shipped with what
+¹Assim você evita gastar 200 reais à toa que nem eu fiz.
 
-## **Socketed cards**
+# Quais Placas Foram Vendidas com Quais Computadores
 
-Ones you can buy and install yourself
+## **Placas Removíveis**
 
-* BCM943602CDP(Wifi) + 20703A1(Bluetooth 4.0) + U.FL Connector
+Que podem ser compradas e instaladas por conta própria:
+
+* BCM943602CDP (Wi-Fi) + 20703A1 (BT 4.0): **Conector U.FL**
   * iMac16,x
   * iMac17,1
-  * iMac18,x(Different Bluetooth module, 20703A2, Bluetooth 4.2)
-* BCM94360CD(Wifi) + 20702B0(Bluetooth 4.0) + U.FL Connector
+  * iMac18,x (módulo Bluetooth diferente: 20703A2 (BT 4.2))
+* BCM94360CD (Wi-Fi) + 20702B0 (BT 4.0) + U.FL Connector
   * iMac14,x
   * iMac15,x
   * MacPro6,1
-* BCM94331CD(Wifi) + BRCM20702(05AC:828b, Bluetooth 4.0) + U.FL Connector
+* BCM94331CD (Wi-Fi) + BRCM20702 (05AC:828b, BT 4.0): **Conector U.FL**
   * iMac13,x
-* BCM94360CS2(Wifi) + BRCM20702(05AC:821f, Bluetooth 4.0) + MHF4 Connector
+* BCM94360CS2 (Wi-Fi) + BRCM20702 (05AC:821f, BT 4.0): **Conector MHF4**
   * MacBookAir5,x
   * MacBookAir6,x
   * MacBookAir7,x
-* BCM943602CS(Wifi) + 20703A1(Bluetooth 4.0) + MHF4 Connector
+* BCM943602CS (Wi-Fi) + 20703A1 (BT 4.0): **Conector MHF4**
   * MacBookPro12,x
-* BCM94360CS(Wifi) + 20702B0(Bluetooth 4.0) + MHF4 Connector
+* BCM94360CS (Wi-Fi) + 20702B0 (BT 4.0): **Conector MHF4**
   * Macmini7,x
   * MacBookPro11,x
-* BCM94360CSAX + BRCM20702(05AC:828c, Bluetooth 4.0)  + MHF4 Connector
+* BCM94360CSAX + BRCM20702 (05AC:828c, BT 4.0): **Conector MHF4**
   * MacBookPro10,x
-* BCM94350  + MHF4 Connector
-  * MacBook8,1 - 4350C1, Bluetooth 4.0
-  * MacBookPro13,x - 20703A2, Bluetooth 4.2
-  * MacBookPro14,x - 4350, Bluetooth 4.2
+* BCM94350: **Conector MHF4**
+  * MacBook8,1 - 4350C1, BT 4.0
+  * MacBookPro13,x - 20703A2, BT 4.2
+  * MacBookPro14,x - 4350, BT 4.2
 
 <details>
-<summary>Legacy Wifi Cards</summary>
+<summary>Placas Wi-Fi Antigas</summary>
 
 **Broadcom**:
 
@@ -54,7 +57,7 @@ Ones you can buy and install yourself
   * Macmini4,1
 * BCM4322
   * MacBook5,1
-  * MacBookPro5,1 and 7,1
+  * MacBookPro5,1 e 7,1
   * MacBookAir3,1-5,1
   * MacPro5,1
 * BCM43224
@@ -80,27 +83,26 @@ Ones you can buy and install yourself
 </details>
 <br>
 
-## **Solder/proprietary cards**
+## **Placas Soldadas/Proprietárias**
 
-Apple's custom cards that no one else has, specifically called SOCs from Broadcom
+Placas personalizadas da Apple que ninguém mais tem. São SoCs da Broadcom com nomes específicos.
 
-* BCM4364(Wifi) + 4364B0(Bluetooth 5.0)
+* BCM4364 (Wi-Fi) + 4364B0 (BT 5.0)
   * iMac19,x
   * Macmini8,1
   * MacBookPro15,x
-  * iMacPro1,1 - 4364(Bluetooth 4.2)
-  * MacPro7,1- 4364B3(Bluetooth 5.0)
+  * iMacPro1,1 - 4364 (BT 4.2)
+  * MacPro7,1 - 4364B3 (BT 5.0)
 
 * BCM4355
   * MacBookAir8,1
-  
 
-# What does an Airport adapter look like
+# Como é o Visual de um Adaptador AirPort
 
-![PCIe Adapter(Requires an extra USB port for Bluetooth)](https://i.imgur.com/AUtNhiB.jpg)
+![Adaptador PCIe (necessita de uma porta USB extra para Bluetooth)](https://i.imgur.com/AUtNhiB.jpg)
 
-![M.2 NGFF B+M Adapter(Requires an extra USB port for Bluetooth)](https://i.imgur.com/MNt8xqq.jpg)
+![Adaptador M.2 NGFF chave B+M (necessita de uma porta USB extra para Bluetooth)](https://i.imgur.com/MNt8xqq.jpg)
 
-![M.2 NGFF A+E Adapter](https://i.imgur.com/NLUpEl3.jpg)
+![Adaptador M.2 NGFF chave A+E](https://i.imgur.com/NLUpEl3.jpg)
 
-![mini PCIe Adapter](https://i.imgur.com/wRaFDLt.jpg)
+![Adaptador Mini PCIe](https://i.imgur.com/wRaFDLt.jpg)
