@@ -1,23 +1,23 @@
 # Mini PCIe
 
-So mini PCIe is most useful for users with older systems that don't have M.2 based wireless. With mini PCIe you have a couple of options:
+Placas Mini PCIe são mais úteis para usuários de computadoers mais antigos que não possuem placas com conexão M.2. Com Mini PCIe, existem algumas opções:
 
-* Half Sized mini PCIe
-* Full sized mini PCIe
-* Apple Airport Card adapted to a full sized mini PCIe
+* Mini PCIe half-size
+* Mini PCIe full-size
+* Placa Apple AirPort adaptada para Mini PCIe full-size
 
-For older laptop users you'll generally be limited to half sized mini PCIe wireless cards due to space constraints but for desktop users, it's recommended to buy an Apple Airport Card with an adapter. The reason being is this avoids issues with PCI IDs not matching and not having drivers flags be set off, solutions are to force load the accompanying kext or modify the kext's PCI ID list to support your model.
+Usuários de notebooks mais antigos geralmente estarão limitados às placas Wi-Fi Mini PCIe half-size devido a falta de espaço. Já para usuários de desktop, é recomendado comprar uma placa Apple AirPort e usar um adaptador. O motivo para tal é que isso evita problemas com IDs de PCI incompatíveis que não ativarão as kexts e exigirão forçar o carregamento ou modificar a lista de IDs de PCI da kext para suportar a placa.
 
-The other thing to note with mini PCIe is that some vendors have a whitelist on wireless cards installed, speciifcally that only their brand of cards will work. The system **won't even post** with a non-branded one installed, the main culprits:
+Outra coisa para se ter em mente com placas Mini PCIe é que algumas fabricantes inserem uma lista branca de placas Wi-Fi na BIOS/firmware UEFI, de forma que somente as placas da própria marca sejam reconhecidas e funcionem. O computador **não inicia nem mesmo a BIOS/UEFI** tendo uma placa de outra marca instalada. As fabricantes que mais fazem isso são:
 
-* Lenovo(7th gen and older)
+* Lenovo (7ª geração e anterior)
 * Toshiba
-* HP(3rd gen and older)
+* HP (3ª geração e anterior)
 * Compaq
 
-There are some work arounds with [BIOS mods](https://medium.com/@p0358/removing-wlan-wwan-bios-whitelist-on-a-lenovo-laptop-to-use-a-custom-wi-fi-card-f6033a5a5e5a), though be careful as poor patching can in fact **brick your device**
+Existem maneiras de contornar isso usando [modificações de BIOS](https://medium.com/@p0358/removing-wlan-wwan-bios-whitelist-on-a-lenovo-laptop-to-use-a-custom-wi-fi-card-f6033a5a5e5a), mas é necessário ter bastante cuidado, visto que patches mal feitos podem **brickar o computador**.
 
-# Supported
+# Placas Suportadas
 
 * **BCM94360HMB** (ABGN+AC, BT 4.0, 3x3:3):
 
@@ -35,22 +35,24 @@ There are some work arounds with [BIOS mods](https://medium.com/@p0358/removing-
   * HP TPC-Q013
   * Lenovo Lite-On WCBN606BH
 
-All cards presented here require the following:
+Todas as placas apresentadas aqui necessitam do seguinte:
 
 * [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases)
 * [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
   * BrcmBluetoothInjector
   * BrcmFirmwareData
-  * BrcmPatchRAM fix:
-    * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
-    * BrcmPatchRAM2 for 10.11-10.14
-    * BrcmPatchRAM for 10.10 or older
+  * Correção BrcmPatchRAM:
+    * BrcmPatchRAM3 para macOS a partir do 10.14 Mojave (precisa ser combinado com o BrcmBluetoothInjector).
+    * BrcmPatchRAM2 para OS X 10.11 El Capitan a macOS 10.14 Mojave.
+    * BrcmPatchRAM para OS X 10.10 Yosemite ou anterior.
 
-# Older models(Not natively supported in Mojave)
+# Modelos Antigos
 
-With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding these wireless cards.
+Não são suportadas nativamente no macOS 10.14 Mojave.
 
-**Note**: Injecting the kext into macOS Catalina is even more unstable
+Com esses modelos, será necessário reinjetar o plugin antigo da placa Wi-Fi usado no macOS 10.13 High Sierra para que elas funcionem no macOS 10.14 Mojave. Existem algumas kexts diferentes para fazer isso, mas no geral, recomenda-se evitar essas essas placas.
+
+**Observação**: injetar essa kext no macOS 10.15 Catalina é ainda mais instável.
 
 * **BCM94322**4 HMS/HMB (ABGN, 2x2:2)
   * Dell DW1520

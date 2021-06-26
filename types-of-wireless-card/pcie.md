@@ -58,7 +58,7 @@ Todas as placas apresentadas aqui, exceto as Apple AirPort e Fenvi, necessitam d
 
 Não suportadas nativamente no macOS 10.14 Mojave.
 
-Com esses modelos, será necessário reinjetar o plugin antigo da placa Wi-Fi usado no macOS 10.13 High Sierra para que elas funcionem no macOS 10.14 Mojave. Existem algumas kexts diferentes para fazer isso, mas no geral, recomenda-se que essas placas sejam evitadas a não ser que seja absolutamente necessário utilizá-las.
+Com esses modelos, será necessário reinjetar o plugin antigo da placa Wi-Fi usado no macOS 10.13 High Sierra para que elas funcionem no macOS 10.14 Mojave. Existem algumas kexts diferentes para fazer isso, mas no geral, recomenda-se evitar essas placas a não ser que seja absolutamente necessário utilizá-las.
 
 **Observação**: injetar essa kext no macOS 10.15 Catalina é ainda mais instável.
 **É altamente recomendado trocá-la por uma placa mais nova.**
