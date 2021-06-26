@@ -1,18 +1,18 @@
 # PCIe
 
-By far the most popular option for desktop users has been to buy an old Apple Aiport Wireless card and place it into a PCIe riser card. The benefits of this is that as long as the hardware works natively on a real mac it will work on without any kexts/framework modifications. With PCIe you have a couple of options:
+De longe a opção mais popular entre usuários de desktop é comprar uma velha placa Wi-Fi Apple AirPort e encaixá-la em um adaptador PCIe do tipo *riser*. Os benefícios dela são que, enquanto o hardware funcionar nativamente em um Mac de verdade, a placa funcionará sem quaisquer kexts ou modificações de *framework*. Com PCIe, existem algumas opções:
 
-* Apple Airport Card adapted to a full sized PCIe adapter (Recommended)
-* Apple Airport Card adapted to M.2 B+M Key (same as what NVMe SSDs run off)
-* Apple Airport Card adapted to M.2 A+E Key (same as what Intel wireless cards run off)
-* Full sized PCIe Wireless card
+* Placa Apple AirPort adaptada para PCIe full-size (recomendado).
+* Placa Apple AirPort adaptada para M.2 com chave B+M (mesma conexão que os SSDs NVMe utilizam).
+* Placa Apple AirPort adaptada para M.2 com chave A+E (mesma conexão que as placas Wi-Fi da Intel utilizam).
+* Placa Wi-Fi PCIe full-size.
 
-Currently supported chipsets:
+Chipsets atualmente suportados:
 
 * BCM943602CDP
 * BCM943602CD
 * BCM94360CD
-* BCM94331CD (may need to force the kext to load for Catalina\)
+* BCM94331CD (talvez seja necessário forçar a kext a carregar no macOS 10.15 Catalina)
 * BCM94360CS2
 * BCM943602CS
 * BCM94360CSAX
@@ -20,45 +20,48 @@ Currently supported chipsets:
 * BCM94352Z
 * BCM94350ZAE
 
-# Supported (Full sized PCIe Wireless card)
+# Placas Suportadas (PCIe full-size)
 
 * **BCM94360CD** (ABGN+AC):
 
   * Fenvi FV T919 (Bluetooth 4.0)
-  * Fenvi AC1900 (No Bluetooth, EOL)
-  * TP-LINK Archer T9E AC1900 (No Bluetooth, EOL)
-  * TP-LINK Archer T8E (No Bluetooth)
-  * RNX-AC1900PCE (No Bluetooth)
-  * ASUS PCE-AC66 (No Bluetooth)
-  * ASUS PCE-AC68 (No Bluetooth)
+  * Fenvi AC1900 (Sem Bluetooth, saindo de linha)
+  * TP-LINK Archer T9E AC1900 (Sem Bluetooth, saindo de linha)
+  * TP-LINK Archer T8E (Sem Bluetooth)
+  * RNX-AC1900PCE (Sem Bluetooth)
+  * ASUS PCE-AC66 (Sem Bluetooth)
+  * ASUS PCE-AC68 (Sem Bluetooth)
 
 * **BCM94360CS2** (ABGN+AC):
 
   * Fenvi FV-HB1200 (Bluetooth 4.0)
-  * AWD Wireless LAN Card (No Bluetooth)
+  * AWD Wireless LAN Card (Sem Bluetooth)
 
 * **BCM94352** (ABGN+AC):
 
-  * TP-LINK Archer T6 (No Bluetooth)
-  * Rosewill RNX-AC1300PCE (No Bluetooth)
-  * ASUS PCE-AC56 (No Bluetooth)
+  * TP-LINK Archer T6 (Sem Bluetooth)
+  * Rosewill RNX-AC1300PCE (Sem Bluetooth)
+  * ASUS PCE-AC56 (Sem Bluetooth)
 
-All cards presented here besides the Apple Airport and Fenvi cards require the following:
+Todas as placas apresentadas aqui, exceto as Apple AirPort e Fenvi, necessitam do seguinte:
 
 * [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup/releases)
 * [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
   * BrcmBluetoothInjector
   * BrcmFirmwareData
-  * BrcmPatchRAM fix:
-    * BrcmPatchRAM3 for 10.14+ (must be paired with BrcmBluetoothInjector)
-    * BrcmPatchRAM2 for 10.11-10.14
-    * BrcmPatchRAM for 10.10 or older
+  * Correção BrcmPatchRAM:
+    * BrcmPatchRAM3 para macOS a partir do 10.14 Mojave (precisa ser combinado com o BrcmBluetoothInjector).
+    * BrcmPatchRAM2 para OS X 10.11 El Capitan a macOS 10.14 Mojave.
+    * BrcmPatchRAM para OS X 10.10 Yosemite ou anterior.
 
-# Older Models(Unsupported in Mojave)
+# Modelos Antigos
 
-With these models, you'll need to reinject the old plugin your wireless card used in High Sierra to work in Mojave. There are a couple of different kexts to do this but generally, we recommend avoiding this card unless absolutely necessary.
+Não suportadas nativamente no macOS 10.14 Mojave.
 
-**Note**: Injecting the kext into macOS Catalina is even more unstable, **highly encouraged to upgrade**
+Com esses modelos, será necessário reinjetar o plugin antigo da placa Wi-Fi usado no macOS 10.13 High Sierra para que elas funcionem no macOS 10.14 Mojave. Existem algumas kexts diferentes para fazer isso, mas no geral, recomenda-se que essas placas sejam evitadas a não ser que seja absolutamente necessário utilizá-las.
+
+**Observação**: injetar essa kext no macOS 10.15 Catalina é ainda mais instável.
+**É altamente recomendado trocá-la por uma placa mais nova.**
 
 * **Atheros 9380**:
   * TP-Link TL-WDN4800
