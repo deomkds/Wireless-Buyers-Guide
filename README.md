@@ -1,3 +1,13 @@
-# Wireless Buyers Guide
+# Guia de Compra de Wi-Fi
 
-So you've finally installed macOS onto your desktop/laptop/smart fridge but you look towards the menubar and see a Bluetooth icon yet no wifi to go with. You immediately bolt to the Settings pane and see no wifi option and wonder where you may have gone wrong in your install. Scowering the inter-webs did provide an answer but it was not that which you wanted to hear, "your wifi card is shit ANON!" said some user on a forum with far too many ads and a broken layout. They then proceeded to tell you how stupid you were to even think your wireless card would work, "how dare you not have the knowledge of Hackintosh hive mind". Well you search for more definitive answers and finally drop onto this page hoping to clear things up
+Então você finalmente instalou o macOS no seu desktop/notebook/geladeira inteligente e, ao olhar em direção à barra de menus, você vê um ícone de Bluetooth, mas não um ícone de Wi-Fi para acompanhá-lo.
+
+Imediatamente, você pula para o painel de Configurações, não encontra nenhuma opção de Wi-Fi e fica imaginando onde pode ter errado com a sua instalação. Caçar na internet de fato deu a você uma resposta, porém não era aquilo que você queria ouvir:
+
+- Sua placa wifi é uma BOSTA! - disse algum usuário em um fórum com anúncios demais e um leiaute quebrado.
+
+Então o usuário continuou, dizendo a você o quão idiota você é por pensar que sua placa Wi-Fi funcionaria.
+
+- Como ousa não não saber tudo sobre Hackintosh logo de cara?
+
+Bom, você procura por respostas mais definitivas e finalmente cai nesta página, com a esperança de clarear as coisas um pouco.
