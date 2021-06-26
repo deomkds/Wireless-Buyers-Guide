@@ -1,64 +1,58 @@
 # USB
 
-While the worst options for wireless, this is one that not many people can choose to avoid due to either their wireless cards being soldered or not wanting to break their warranty to replace their card.
+Embora seja uma das piores opções para wireless, é a opção que muita gente não pode evitar por ter suas placas Wi-Fi soldadas ou não querer violar a garantia abrindo o computador e trocando uma peça.
 
-Things to keep in mind:
+Coisas para se ter em mente:
 
-* Features like AirDrop, Handoff, etc likely won't work
-* Not guaranteed to work 100%
-* Sleep can easily break
-* Need a separate adapter for Bluetooth
-* Most cards use a poorly made 32bit app to get wifi working(and you're reliant on the manufacturer to update their app for Catalina)
-* No Network support in recovery
+* Muito provável que recursos como o AirDrop, o Handoff e outros funcionem.
+* Não é garantido funcionar 100%.
+* Pode facilmente intereferir na suspensão.
+* Precisa de um adaptador separado para Bluetooth.
+* A maioria das placas usam um aplicativo mal feito em 32 bits para funcionar, o que te torna dependente do fabricante para receber atualizações para o macOS 10.15 Catalina.
+* Sem suporte de rede no modo de Recuperação.
 
-And with all these issues it's quite hard to recommend a USB wireless card but there still is hope:
+E com todos esses problemas, é bem difícil recomendar uma placa Wi-Fi USB. No entanto, ainda há esperança:
 
 # [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
-While not perfect this might just be as close as we can get to "good" USB wireless thanks to it being kept up-to-date by [Chris1111](https://github.com/chris1111)(So no 32bit app crap) and supports a large variety of Chipsets.
+Embora imperfeito, esse aplicativo talvez seja o mais próximo que se pode chegar de ter um "bom" Wi-Fi USB graças às atualizações desenvolvidas pelo [Chris1111](https://github.com/chris1111). Nada daquela porcaria em 32 bits e ainda suporta uma grande variedade de chipsets.
 
-I've listed out all the chipsets that have been known good and you can see if yours matches any of these chipsets
+A seguir, uma lista de todos os chipsets que são conhecidos por funcionar. Veja se o seu adaptador está nela.
 
 * **RTL8188CUS**:
-
-  * Asus USB-N 10 Nano/N150
+  * Asus USB-N10 Nano/N150 
   * TRENDnet N150 Micro
 
 * **RTL8192CU**:
-
   * EDIMAX- EW-7722UTn V2
   * EDIMAX N300
 
 * **RTL8192EU**:
-
   * TL-WN823N v2
   * TL-WN823N v3
   * TL-WN821N v6
 
 * **RTL8188EUS**:
-
   * TL-WN725N v3
   * TL-WN722N v3
 
 * **RTL8811AU**:
-
   * Archer T2U NANO
 
 * **RTL8812BU**:
-
   * Archer T4U V3
 
 * **RTL8814AU**:
-
   * Archer T9UH V2
 
 * **RTL8812AU**:
-
   * Linksys WUSB6300
 
 # [USB Wireless Utility](https://github.com/chris1111/USB-Wireless-Utility)
 
-Just like [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover), WIFI-Dlink allows support for quite a few Mediatek/Ralink cards but due to being a 32bit app is unsupported on AMD systems. There's a newer version for Catalina which is 64 bit based perfect for AMD systems as well: [WIFI-Dlink Catalina-Panel](https://github.com/chris1111/WIFI-Dlink-Catalina-Panel)
+Assim como o [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover), o WIFI-Dlink oferece suporte para algumas placas Mediatek/Ralink. No entanto, por ser um aplicativo de 32 bits, não há suporte em computadores AMD. Existe uma nova versão para o macOS 10.15 Catalina que é 64 bits e funciona perfeitamente em sistemas AMD: [WIFI-Dlink Catalina-Panel](https://github.com/chris1111/WIFI-Dlink-Catalina-Panel).
+
+Chipsets Ralink suportados:
 
 * RT3572
 * RT3072
