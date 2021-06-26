@@ -11,7 +11,7 @@ Observação:
 
 ¹Assim você evita gastar 200 reais à toa que nem eu fiz.
 
-# Quais Placas Foram Vendidas com Quais Computadores
+# Relação Placas vs Computadores
 
 ## **Placas Removíveis**
 
