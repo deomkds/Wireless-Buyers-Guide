@@ -1,32 +1,35 @@
-# Bluetooth Support
+# Suporte de Bluetooth
 
-So with Bluetooth in macOS, it can become quite confusing on what actually is supported and what's not.
+Com Bluetooth no macOS, fica bastante confuso saber o que realmente é suportado e o que não é.
 
-## Supported Bluetooth chipset
+## Chipsets Bluetooth Suportados
 
-Well I was orginally going to manually find every supported model but user [MarkVillacampa](https://www.tonymacx86.com/members/markvillacampa.1790473/) has done a great job already so I'll link to his findings
+O usuário [MarkVillacampa](https://www.tonymacx86.com/members/markvillacampa.1790473/) fez um belo trabalho de descobrir os chipsets suportados. Eis o link:
 
-* **[Bluetooth List](https://www.tonymacx86.com/threads/guide-how-to-get-bluetooth-and-wifi-working.275962/)**
-  * IOGEAR Bluetooth 4.0(GBU521)
+* **[Lista de Bluetooth](https://www.tonymacx86.com/threads/guide-how-to-get-bluetooth-and-wifi-working.275962/)**
+  * IOGEAR Bluetooth 4.0 (GBU521)
   * ASUS USB-BT400
   * Insignia NS-PCY5BMA
-  
-**Asus and Lenovo note**: On 7th gen and newer laptop chipsets, Bluetooth has been intergrated into the PCH and these OEMS don't have any USB rails wired off of their A/E slots. This means that you'll need to either solder new headers for Bluetooth on your motherboard or route a USB cable to an existing port
 
-## So why does Bluetooth work on my Intel card
+**Observação a respeito de Asus e Lenovo**
+Nos notebooks com chipset de 7ª geração e mais novos, o Bluetooth foi integrado na PCH e essas OEMs não possuem trilhas USB conectadas em seus slots A/E. Isso significa que será necessário soldar novos conectores na placa-mãe para o Bluetooth ou conectar um cabo USB em uma porta já existente.
 
-Well, it's a bit complicated and involves looking at IOkit and how it handles different devices. Bluetooth is actually quite simple in how it interacts with the system and thanks to being generally run off the USB rail, generic devices can easily hook into IOKit and act semi natively\(usually with the loss of Handoff, Airdrop, etc\). Wifi, on the other hand, is quite a bit more complicated as there needs to be explicit support in the IO80211 family for the device so only Broadcom/Atheros cards have any chance of working
+## Bluetooth em Placas Intel
 
-So if you rebooted from Windows into macOS, the firmware on the card may have stuck on allowing you temporary Bluetooth support on your card. To make sure this sticks around, you can use a firmware injecting kext like that found on the [IntelBluetoothFirmware repo](https://github.com/zxystd/IntelBluetoothFirmware)
+Então, por que o Bluetooth funciona nas placas da Intel?
 
-## Bluetooth in the BIOS
+Bem, isso é um pouco complicado e envovle observar o IOKit e como ele lida com dispositivos diferentes. O Bluetooth é, na verdade, bastante simples na maneira como ele interage com o sistema. Graças a geralmente ser conectado pela trilha USB, dispositivos genéricos podem facilmente conectar-se ao IOKit e agir semi-nativamente (geralmente sem suporte ao Handoff, AirDrop etc.). O Wi-Fi, em contrapartida, é um bocado mais complicado por precisar que exista suporte explícito na IO80211Family.kext para o dispositivo, então somente placas Broadcom ou Atheros possuem uma chance de funcionar.
 
-So to support Bluetooth in the BIOS, you'll need a Bluetooth device that supports HID Proxy. The idea of HID proxy is to create a minimal Bluetooth stack that is then used into tricking the BIOS into thinking your Bluetooth keyboard is actually a USB one, as there aren't any firmwares that actually implement Bluetooth.
+Nos casos de reinicialização do Windows para o macOS, o firmware da placa pode permanecer ligado, permitindo suporte temporário para a placa. Para garantir que isso permaneça sempre, é possível usar uma kext de injeção de firmware como essa encontrada no repositório [IntelBluetoothFirmware](https://github.com/zxystd/IntelBluetoothFirmware).
 
-All of Apple's cards natively support this feature but you'll need to search on a case-by-case basis with other devices
+## Bluetooth na BIOS
 
-## Retaining Bluetooth keys between OSes
+Para obter suporte do Bluetooth na BIOS, será necessário ter um dispositivo Bluetooth que suporte Proxy HID. A ideia do Proxy HID é criar uma pilha Bluetooth mínima que é então usada para enganar a BIOS e fazê-la pensar que seu teclado Bluetooth é, na verdade, um teclado USB, por não existirem firmwares que de fato implementam Bluetooth nativamente.
 
-This is mainly for devices that only have 1 Bluetooth profile which can be a bit frustrating when switching between OSes, we'll our local Frewt boll has saved us again!
+Todas as placas da Apple suportam esse recurso nativamente, mas será necessário pesquisar caso a caso quando se tratar de outros dispositivos.
 
-* **[Dual Booting with Bluetooth Devices](https://github.com/dortania/clover-laptop-guide/blob/master/extras/dual-booting-with-bluetooth-devices.md)**
+## Mantendo Chaves Bluetooth Entre Sistemas
+
+Isso serve principalmente para dispositivos que têm somente um perfil Bluetooth, o que pode ser um pouco frustrante ao trocar entre sistemas operacionais. Ainda bem que temos isso:
+
+* **[Dual Boot com Dispositivos Bluetooth](https://github.com/dortania/clover-laptop-guide/blob/master/extras/dual-booting-with-bluetooth-devices.md)**
