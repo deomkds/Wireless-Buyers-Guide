@@ -1,29 +1,29 @@
-# Supported/Unsupported Chipsets
+# Chipsets Supportados e Não Suportados
 
-With macOS there's a limited amount of supported hardware regardless of which category and wireless cards are no different.
+Com o macOS, existe uma quantidade limitada de hardware suportado, independente da categoria. Com placas Wi-Fi, as coisas não são diferentes.
 
-## Supported chipsets
+## Chipsets Suportados
 
-### Big Sur(11)+
+### macOS 11 Big Sur
 
 * BCM943602
 * BCM94360
 * BCM94352
 * BCM94350
 
-###  Catalina(10.15)+
+### macOS 10.15 Catalina
 
 * BCM943224
 * BCM94331
-  * May require you to force load IO80211Family.kext when running macOS 10.15, Catalina, see `Kernel -> Force` in OpenCore for more details 
-* All those mentioned in Big Sur(11) are also supported in Catalina(10.15)
+  * Talvez exija o carregamento forçado da IO80211Family.kext quando no macOS 10.15 Catalina. Veja `Kernel -> Force` no OpenCore para mais detalhes.
+* Todos os chipsets mencionados no macOS 11 Big Sur também são suportados no macOS 10.15 Catalina.
 
-### Mojave(10.14)+
+### macOS 10.14 Mojave
 
 * BCM94322
-* All those mentioned in Catalina and newer are also supported in Mojave(10.14)
+* Todos os chipsets mencionados no macOS 10.15 Catalina também são suportados no macOS 10.14 Mojave.
 
-### High Sierra(10.13)+
+### macOS 10.13 High Sierra
 
 * AR242x
 * AR542x
@@ -33,9 +33,9 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 * AR9285 - AR5B95
 * AR9287 - AR5B97
 * AR9380 - AR5BXB112
-* All those mentioned in Mojave and newer are also supported in High Sierra
+* Todos os chipsets mencionados no macOS 10.14 Mojave também são suportados no macOS 10.13 High Sierra.
 
-### El Capitan(10.11)+
+### macOS 10.11 El Capitan
 
 * BCM4311
 * BCM4318
@@ -43,9 +43,9 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 * BCM4309
 * BCM4321
 * BCM4322
-* All those mentioned in High Sierra and newer are also supported in El Capitan
+* Todos os chipsets mencionados no macOS 10.13 High Sierra também são suportados no macOS 10.11 El Capitan.
 
-# Unsupported Chipsets
+# Chipsets Não Suportados
 
 ## Broadcom
 
@@ -61,5 +61,5 @@ With macOS there's a limited amount of supported hardware regardless of which ca
 
 ## Intel
 
-Currently no Intel chipsets are not officially supported in macOS, however great work has been done in this space with itlwm: [Where's my Intel Wifi](../misc/intel.md):
+Atualmente, nenhum chipset Intel possui suporte oficial no macOS. No entanto, um belo trabalho tem sido feito nessa área pelo itlwm: [Placas Wi-Fi da Intel](../misc/intel.md):
 
