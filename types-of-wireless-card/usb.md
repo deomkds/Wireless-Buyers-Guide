@@ -52,7 +52,7 @@ A seguir, uma lista de todos os chipsets que são conhecidos por funcionar. Veja
 
 Assim como o [Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover), o WIFI-Dlink oferece suporte para algumas placas Mediatek/Ralink. No entanto, por ser um aplicativo de 32 bits, não há suporte em computadores AMD. Existe uma nova versão para o macOS 10.15 Catalina que é 64 bits e funciona perfeitamente em sistemas AMD: [WIFI-Dlink Catalina-Panel](https://github.com/chris1111/WIFI-Dlink-Catalina-Panel).
 
-Chipsets Ralink suportados:
+Chipsets Ralink e MediaTek suportados:
 
 * RT3572
 * RT3072
