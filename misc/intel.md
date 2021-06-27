@@ -1,7 +1,7 @@
-# Where's my Intel Wifi
+# Placas Wi-Fi da Intel
 
-So it's an interesting time, we're finally getting traction on an Intel Wifi kext for macOS. While not finished and much to be done, we have the itlwm project on the horizon:
+Vivemos um momento interessante. Finalmente uma kext para placas Wi-Fi Intel está tomando tração. Embora ainda não finalizada e com muito a ser feito, existe o projeto itlwm no horizonte:
 
 * [itlwm](https://github.com/OpenIntelWireless/itlwm)
-  * Currently does connect and even support Apple's own IO80211 framework(via AirportItlwm)
-  * Unfortunately doesn't support Airdrop, see here for features and limitations: [OpenIntelWireless](https://openintelwireless.github.io/)
+  * Atualmente conecta e até mesmo suporte o framewrko IO80211 da Apple (via AirportItlwm).
+  * Infelizmente, não suporta AirDrop. Veja aqui para recursos e limitações: [OpenIntelWireless](https://openintelwireless.github.io/).
