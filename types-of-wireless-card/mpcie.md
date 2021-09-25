@@ -1,21 +1,21 @@
 # Mini PCIe
 
-Placas Mini PCIe são mais úteis para usuários de computadoers mais antigos que não possuem placas com conexão M.2. Com Mini PCIe, existem algumas opções:
+Placas Mini PCIe são mais úteis para usuários de computadoers mais antigos que não possuem placas com conexão M.2. Em relação a Mini PCIe, existem algumas opções:
 
-* Mini PCIe half-size
-* Mini PCIe full-size
-* Placa Apple AirPort adaptada para Mini PCIe full-size
+* Mini PCIe *half-size*
+* Mini PCIe *full-size*
+* Placa Apple AirPort adaptada para Mini PCIe *full-size*
 
-Usuários de notebooks mais antigos geralmente estarão limitados às placas Wi-Fi Mini PCIe half-size devido a falta de espaço. Já para usuários de desktop, é recomendado comprar uma placa Apple AirPort e usar um adaptador. O motivo para tal é que isso evita problemas com IDs de PCI incompatíveis que não ativarão as kexts e exigirão forçar o carregamento ou modificar a lista de IDs de PCI da kext para suportar a placa.
+Usuários de notebooks mais antigos geralmente estarão limitados às placas Wi-Fi Mini PCIe *half-size* devido a falta de espaço. Já para usuários de desktop, é recomendado comprar uma placa Apple AirPort e usar um adaptador. O motivo para isso é evitar problemas com IDs de PCI incompatíveis que não ativarão as *kexts* e exigirão forçar o carregamento ou modificar a lista de IDs de PCI da *kext* para suportar a placa.
 
-Outra coisa para se ter em mente com placas Mini PCIe é que algumas fabricantes inserem uma lista branca de placas Wi-Fi na BIOS/firmware UEFI, de forma que somente as placas da própria marca sejam reconhecidas e funcionem. O computador **não inicia nem mesmo a BIOS/UEFI** tendo uma placa de outra marca instalada. As fabricantes que mais fazem isso são:
+Outra coisa a se observar com placas Mini PCIe é que algumas fabricantes inserem uma lista branca de placas Wi-Fi na BIOS/firmware UEFI, de forma que somente as placas da própria marca sejam reconhecidas e funcionem. O computador **não inicia nem mesmo a BIOS/UEFI** ao usar uma placa de outra marca. As fabricantes que mais fazem isso são:
 
 * Lenovo (7ª geração e anterior)
 * Toshiba
 * HP (3ª geração e anterior)
 * Compaq
 
-Existem maneiras de contornar isso usando [modificações de BIOS](https://medium.com/@p0358/removing-wlan-wwan-bios-whitelist-on-a-lenovo-laptop-to-use-a-custom-wi-fi-card-f6033a5a5e5a), mas é necessário ter bastante cuidado, visto que patches mal feitos podem **brickar o computador**.
+Existem maneiras de contornar isso usando [modificações de BIOS](https://medium.com/@p0358/removing-wlan-wwan-bios-whitelist-on-a-lenovo-laptop-to-use-a-custom-wi-fi-card-f6033a5a5e5a) (em inglês), mas é necessário ter bastante cuidado, visto que patches mal feitos podem **brickar o computador**.
 
 # Placas Suportadas
 
