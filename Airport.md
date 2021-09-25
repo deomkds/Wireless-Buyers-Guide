@@ -1,6 +1,6 @@
 # Adaptadores AirPort
 
-Então, do que se tratam os adaptadores AirPort e porque são as placas preferidas? Bom, porque são placas genuínas da Apple retiradas de MacBooks e iMacs. Isso significa que nenhuma configuração extra é necessária para fazê-las funcionar. O principal problema é que elas precisam de um adaptador para encaixá-las em placas-mãe de PCs e são geralmente maiores, o que as torna uma opção melhor para desktops, mas não para notebooks.
+Então, do que se tratam os adaptadores AirPort e porque são as placas preferidas? Bom, porque são placas genuínas da Apple, retiradas de MacBooks e iMacs. Isso significa que nenhuma configuração extra é necessária para fazê-las funcionar. O principal problema é que elas precisam de um adaptador para encaixá-las em placas-mãe de PCs e são geralmente maiores, o que as torna uma opção melhor para desktops do que para notebooks.
 
 A melhor parte? **Não é preciso usar nenhuma kext!**
 
