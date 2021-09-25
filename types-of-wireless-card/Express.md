@@ -7,4 +7,4 @@ Suportadas até o macOS 10.13 High Sierra:
 * **Atheros AR9280**
   * Ubiquiti Networks SR71-X (802.11 a/b/g/n, 2x2)
 
-Com esse modelo, será necessário reinjetar o velho plugin AirPortAtheros40 usado no macOS 10.13 High Sierra par que funcione no macOS 10.14 Mojave.
+Ao usar esse modelo, será necessário reinjetar o velho plugin AirPortAtheros40, usado no macOS 10.13 High Sierra, para que ela funcione no macOS 10.14 Mojave.
