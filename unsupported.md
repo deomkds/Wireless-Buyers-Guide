@@ -1,6 +1,6 @@
 # Chipsets Supportados e Não Suportados
 
-Com o macOS, existe uma quantidade limitada de hardware suportado, independente da categoria. Com placas Wi-Fi, as coisas não são diferentes.
+Existe uma quantidade limitada de hardware suportado no macOS, independente da categoria. As coisas não são diferentes com placas Wi-Fi.
 
 ## Chipsets Suportados
 
@@ -15,13 +15,13 @@ Com o macOS, existe uma quantidade limitada de hardware suportado, independente 
 
 * BCM943224
 * BCM94331
-  * Talvez exija o carregamento forçado da IO80211Family.kext quando no macOS 10.15 Catalina. Veja `Kernel -> Force` no OpenCore para mais detalhes.
-* Todos os chipsets mencionados no macOS 11 Big Sur também são suportados no macOS 10.15 Catalina.
+  * Talvez exija o carregamento forçado da `IO80211Family.kext` ao usar o macOS 10.15 Catalina. Veja `Kernel -> Force` no OpenCore para mais detalhes.
+* Todos os chipsets suportados no macOS 11 Big Sur também são suportados no macOS 10.15 Catalina.
 
 ### macOS 10.14 Mojave
 
 * BCM94322
-* Todos os chipsets mencionados no macOS 10.15 Catalina também são suportados no macOS 10.14 Mojave.
+* Todos os chipsets suportados no macOS 10.15 Catalina também são suportados no macOS 10.14 Mojave.
 
 ### macOS 10.13 High Sierra
 
@@ -33,7 +33,7 @@ Com o macOS, existe uma quantidade limitada de hardware suportado, independente 
 * AR9285 - AR5B95
 * AR9287 - AR5B97
 * AR9380 - AR5BXB112
-* Todos os chipsets mencionados no macOS 10.14 Mojave também são suportados no macOS 10.13 High Sierra.
+* Todos os chipsets suportados no macOS 10.14 Mojave também são suportados no macOS 10.13 High Sierra.
 
 ### macOS 10.11 El Capitan
 
@@ -43,7 +43,7 @@ Com o macOS, existe uma quantidade limitada de hardware suportado, independente 
 * BCM4309
 * BCM4321
 * BCM4322
-* Todos os chipsets mencionados no macOS 10.13 High Sierra também são suportados no macOS 10.11 El Capitan.
+* Todos os chipsets suportados no macOS 10.13 High Sierra também são suportados no macOS 10.11 El Capitan.
 
 # Chipsets Não Suportados
 
