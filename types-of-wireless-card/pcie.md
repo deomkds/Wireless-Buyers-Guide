@@ -1,18 +1,18 @@
 # PCIe
 
-De longe a opção mais popular entre usuários de desktop é comprar uma velha placa Wi-Fi Apple AirPort e encaixá-la em um adaptador PCIe do tipo *riser*. Os benefícios dela são que, enquanto o hardware funcionar nativamente em um Mac de verdade, a placa funcionará sem quaisquer kexts ou modificações de *framework*. Com PCIe, existem algumas opções:
+De longe a opção mais popular entre usuários de desktop é comprar uma velha placa Wi-Fi Apple AirPort e encaixá-la em um adaptador PCIe do tipo *riser*. Os benefícios são que, enquanto o hardware funcionar nativamente em um Mac de verdade, a placa funcionará sem quaisquer *kexts* ou modificações de *framework*. Existem algumas opções PCIe:
 
-* Placa Apple AirPort adaptada para PCIe full-size (recomendado).
+* Placa Apple AirPort adaptada para PCIe *full-size* (recomendado).
 * Placa Apple AirPort adaptada para M.2 com chave B+M (mesma conexão que os SSDs NVMe utilizam).
 * Placa Apple AirPort adaptada para M.2 com chave A+E (mesma conexão que as placas Wi-Fi da Intel utilizam).
-* Placa Wi-Fi PCIe full-size.
+* Placa Wi-Fi PCIe *full-size*.
 
 Chipsets atualmente suportados:
 
 * BCM943602CDP
 * BCM943602CD
 * BCM94360CD
-* BCM94331CD (talvez seja necessário forçar a kext a carregar no macOS 10.15 Catalina)
+* BCM94331CD (talvez seja necessário forçar a *kext* a carregar no macOS 10.15 Catalina)
 * BCM94360CS2
 * BCM943602CS
 * BCM94360CSAX
@@ -20,7 +20,7 @@ Chipsets atualmente suportados:
 * BCM94352Z
 * BCM94350ZAE
 
-# Placas Suportadas (PCIe full-size)
+# Placas Suportadas (PCIe *full-size*)
 
 * **BCM94360CD** (ABGN+AC):
 
@@ -58,9 +58,9 @@ Todas as placas apresentadas aqui, exceto as Apple AirPort e Fenvi, necessitam d
 
 Não suportadas nativamente no macOS 10.14 Mojave.
 
-Com esses modelos, será necessário reinjetar o plugin antigo da placa Wi-Fi usado no macOS 10.13 High Sierra para que elas funcionem no macOS 10.14 Mojave. Existem algumas kexts diferentes para fazer isso, mas no geral, recomenda-se evitar essas placas a não ser que seja absolutamente necessário utilizá-las.
+Com esses modelos, será necessário reinjetar o plugin antigo da placa Wi-Fi usado no macOS 10.13 High Sierra para que elas funcionem no macOS 10.14 Mojave. Existem algumas *kexts* diferentes para fazer isso, mas no geral, recomenda-se evitar essas placas a não ser que seja absolutamente necessário utilizá-las.
 
-**Observação**: injetar essa kext no macOS 10.15 Catalina é ainda mais instável.
+**Observação**: injetar essa *kext* no macOS 10.15 Catalina é ainda mais instável.
 **É altamente recomendado trocá-la por uma placa mais nova.**
 
 * **Atheros 9380**:
