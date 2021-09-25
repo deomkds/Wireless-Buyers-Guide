@@ -4,7 +4,7 @@ Embora seja uma das piores opções para wireless, é a opção que muita gente 
 
 Coisas para se ter em mente:
 
-* Muito provável que recursos como o AirDrop, o Handoff e outros funcionem.
+* Muito provável que recursos como o AirDrop, o Handoff e outros não funcionem.
 * Não é garantido funcionar 100%.
 * Pode facilmente intereferir na suspensão.
 * Precisa de um adaptador separado para Bluetooth.
