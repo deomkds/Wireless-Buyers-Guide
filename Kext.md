@@ -1,4 +1,4 @@
-# Kexts Necessárias
+# *kexts* Necessárias
 
 * [Placas da Broadcom](#placas-da-broadcom)
 * [Placas da Intel](#placas-da-intel)
@@ -8,14 +8,14 @@
 
 ### [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
 
-Essa kext é necessária para corrigir o Wi-Fi em muitas placas da Broadcom. Embora nem todas precisem, a kext é exigida para usuários de placas que não sejam fabricadas pela Apple. A kext também tem a funcionalidade de injetar kexts da Broadcom mais antigos em versões mais novas do macOS.
+Essa *kext* é necessária para corrigir o Wi-Fi em muitas placas da Broadcom. Embora nem todas precisem, a *kext* é exigida para usuários de placas que não sejam fabricadas pela Apple. A *kext* também tem a funcionalidade de injetar *kexts* da Broadcom mais antigos em versões mais novas do macOS.
 
 Observação:
-* Placas Apple Airport e Fenvi não precisam dessa kext.
+* Placas Apple Airport e Fenvi não precisam dessa *kext*.
 
 ### [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)
 
-Exigida para todas as placas Wi-Fi que não foram fabricadas pela Apple, devido à maneira como lidam com o firmware. É, na verdade, um pacote composto por várias kexts:
+Exigida para todas as placas Wi-Fi que não foram fabricadas pela Apple, devido à maneira como lidam com o firmware. É, na verdade, um pacote composto por várias *kexts*:
 
 * BrcmBluetoothInjector
 * BrcmFirmwareData
@@ -25,14 +25,14 @@ Exigida para todas as placas Wi-Fi que não foram fabricadas pela Apple, devido 
   * BrcmPatchRAM para OS X 10.10 Yosemite ou anterior.
 
 Observação:
-* Placas Apple Airport e Fenvi não precisam dessas kexts.
+* Placas Apple Airport e Fenvi não precisam dessas *kexts*.
 * A ordem do OpenCore é alfabética: Injector -> Data -> RAM.
 
 ## Placas da Intel
 
 ### [itlwm](https://github.com/OpenIntelWireless/itlwm)
 
-Atualmente, conecta e até mesmo suporta o *framework* IO80211 da própria Apple (por meio do AirportItlwm). Infelizmente não suporta AirDrop. Veja aqui os recursos e as limitações: [OpenIntelWireless](https://openintelwireless.github.io/).
+Atualmente, já conecta à internet e até mesmo suporta o *framework* IO80211 da própria Apple (por meio do AirportItlwm). Infelizmente não suporta AirDrop. Veja aqui os recursos e as limitações: [OpenIntelWireless](https://openintelwireless.github.io/).
 
 ### [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases)
 
@@ -40,9 +40,9 @@ Adiciona suporte ao Bluetooth no macOS quando combinado com uma placa Wi-Fi Inte
 
 ## Placas da Atheros
 
-### [IO80211Family.kext do macOS 10.13 High Sierra](https://github.com/khronokernel/IO80211-Patches/blob/main/10.13.6-High-Sierra-Kexts/IO80211HighSierra.kext.zip)
+### [IO80211Family.*kext* do macOS 10.13 High Sierra](https://github.com/khronokernel/IO80211-Patches/blob/main/10.13.6-High-Sierra-*kexts*/IO80211HighSierra.*kext*.zip)
 
-Essa kext é necessária para todos os chipsets Atheros que tiveram o suporte abandonado no macOS 10.14 Mojave. Inclui:
+Essa *kext* é necessária para todos os chipsets Atheros que tiveram o suporte abandonado no macOS 10.14 Mojave. Inclui:
 
 * AR242x
 * AR542x
