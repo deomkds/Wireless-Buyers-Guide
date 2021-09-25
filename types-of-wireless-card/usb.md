@@ -1,14 +1,14 @@
 # USB
 
-Embora seja uma das piores opções para wireless, é a opção que muita gente não pode evitar por ter suas placas Wi-Fi soldadas ou não querer violar a garantia abrindo o computador e trocando uma peça.
+Embora seja uma das piores opções para Wi-Fi, essa é a opção que muita gente precisa usar por ter suas placas Wi-Fi soldadas ou não querer violar a garantia abrindo o computador e trocando uma peça.
 
-Coisas para se ter em mente:
+Coisas a se observar:
 
 * Muito provável que recursos como o AirDrop, o Handoff e outros não funcionem.
 * Não é garantido funcionar 100%.
 * Pode facilmente intereferir na suspensão.
 * Precisa de um adaptador separado para Bluetooth.
-* A maioria das placas usam um aplicativo mal feito em 32 bits para funcionar, o que te torna dependente do fabricante para receber atualizações para o macOS 10.15 Catalina.
+* A maioria das placas precisam de um aplicativo mal feito em 32 bits para funcionar, o que depende do fabricante para receber atualizações para o macOS 10.15 Catalina.
 * Sem suporte de rede no modo de Recuperação.
 
 E com todos esses problemas, é bem difícil recomendar uma placa Wi-Fi USB. No entanto, ainda há esperança:
